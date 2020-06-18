@@ -104,7 +104,7 @@ class ContactData extends Component {
         } // Create key value pairs - name: value
 
         const order = {
-            ingredients : this.props.ings,
+            ingredients: this.props.ings,
             price: this.props.price,
             orderData: formData
         }
@@ -206,4 +206,4 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect()(ContactData);
+export default connect(mapStateToProps)(ContactData);
